@@ -47,7 +47,7 @@ background-image: linear-gradient(
     animation-play-state: paused;
 }
 
-.music-container.play.img-container img{
+.music-container.play .img-container img{
     animation-play-state: running;
 }
 
@@ -63,7 +63,7 @@ background-image: linear-gradient(
 .navigation{
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     z-index: 1;
 }
 
@@ -78,28 +78,29 @@ background-image: linear-gradient(
 }
 
 .action-btn.action-btn-big{
-    color: #cdc2d0; 
+    color: #cdc2d0;
     font-size: 30px;
 }
 
 .action-btn:focus{
     outline: none;
 }
+
 .music-info{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px 15px 0 0;
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 20px;
-    width: calc(100%-40px); 
+    width: calc(100% - 40px);
     padding: 10px 10px 10px 150px;
     opacity: 0;
     transform: translateY(0%);
-    transition: transform .3s ease-in, opacity .3s ease-in;
+    transition: transform .3 ease-in, opacity .3 ease-in;
     z-index: 0;
-} 
+}
 
-.music-container.play.music-info{
+.music-container.play .music-info{
     opacity: 1;
     transform: translateY(-100%);
 }
@@ -110,8 +111,8 @@ background-image: linear-gradient(
 
 .progress-container{
     background-color: #fff;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     margin: 10px 0;
     height: 5px;
     width: 100%;
@@ -122,5 +123,5 @@ background-image: linear-gradient(
     border-radius: 5px;
     height: 100%;
     width: 0%;
-    transition: .1s linear
+    transition: width .1s linear;
 }

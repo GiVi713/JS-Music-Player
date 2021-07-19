@@ -6,7 +6,7 @@ const nextBtn = document.getElementById('next')
 
 const audio = document.getElementById('audio')
 const progress = document.getElementById('progress')
-const progresContainer = document.getElementById('progress-container')
+const progressContainer = document.getElementById('progress-container')
 const title = document.getElementById('title')
 const cover = document.getElementById('cover')
 
@@ -14,7 +14,7 @@ const cover = document.getElementById('cover')
 const songs = ['gospel','search','nazare'];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 0;
 
 //Load song details into DOM
 loadSong(songs[songIndex]);
